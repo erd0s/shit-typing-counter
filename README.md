@@ -1,6 +1,6 @@
 # Shit Typing Counter
 
-Logs all your keystrokes and outputs your rate of hitting backspace or delete.
+Logs all your keystrokes and outputs your rate of hitting backspace or delete. For OSX.
 
 ## Usage
 
