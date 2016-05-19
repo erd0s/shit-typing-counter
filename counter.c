@@ -26,7 +26,8 @@ int main(int argc, const char *argv[]) {
     initscr();
     int row, col;
     getmaxyx(stdscr,row,col);
-    mvprintw(row/2,(col-10)/2,"0.0000000%");   
+    clear();
+    mvprintw(row/2,(col-10)/2,"0.000000%%");   
     refresh();
     CFRunLoopRun();
 
@@ -49,6 +50,7 @@ CGEventRef CGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef e
     float percent = (float) numDeletes / (float) numStrokes * 100.0;
     int row, col;
     getmaxyx(stdscr,row,col);
+    clear();
     mvprintw(row/2,(col-10)/2,"%f%%", percent);   
     // mvprintw(0,0,"%f%%", percent);
     refresh();
